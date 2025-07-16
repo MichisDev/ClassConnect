@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CalendarioActivity">
+
+    <!-- Título del calendario -->
+    <TextView
+        android:id="@+id/tvTituloCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/spectralbold"
+        android:text="Calendario escolar"
+        android:textColor="@color/md_theme_onSurface"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Icono calendario al lado del título -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Icono calendario"
+        app:layout_constraintBottom_toBottomOf="@id/tvTituloCalendario"
+        app:layout_constraintEnd_toStartOf="@id/tvTituloCalendario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTituloCalendario"
+        app:srcCompat="@drawable/ic_calen" />
+
+    <!-- Calendario -->
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="36dp"
+        app:headerColor="@color/md_theme_tertiaryFixedDim_highContrast"
+        app:selectionColor="@color/md_theme_secondaryContainer"
+        app:todayLabelColor="@color/md_theme_errorContainer_highContrast"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloCalendario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Leyenda de eventos (vertical, centrada, icono a la izquierda) -->
+    <LinearLayout
+        android:id="@+id/layoutLeyenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+        <!-- Evento personal -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Evento personal"
+                android:src="@drawable/ic_evento_azul" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Evento personal"
+                android:textColor="@color/md_theme_onSurface"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Evento común -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Evento común"
+                android:src="@drawable/ic_evento_naranja" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Evento común"
+                android:textColor="@color/md_theme_onSurface"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Evento combinado -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Eventos personales y comunes"
+                android:src="@drawable/ic_arco_iris" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Ambos tipos"
+                android:textColor="@color/md_theme_onSurface"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

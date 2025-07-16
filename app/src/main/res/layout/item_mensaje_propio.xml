@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white"
+    android:elevation="2dp">
+
+    <!-- Nombre del autor (propio) -->
+    <TextView
+        android:id="@+id/tvAutorPropio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yo"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:padding="4dp"
+        android:textColor="@color/md_theme_primary" />
+
+    <!-- Contenido del mensaje propio -->
+    <TextView
+        android:id="@+id/tvMensajePropio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/md_theme_primaryContainer"
+        android:textColor="@color/md_theme_onPrimaryContainer"
+        android:padding="8dp"
+        android:text="Mensaje propio" />
+
+    <!-- Hora del mensaje -->
+    <TextView
+        android:id="@+id/tvHoraPropio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14:00"
+        android:textSize="12sp"
+        android:textColor="@color/md_theme_outline"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

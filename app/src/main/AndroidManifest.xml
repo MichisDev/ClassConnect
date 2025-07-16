@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_agenda"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgendaDigital"
+        tools:targetApi="31">
+        <activity
+            android:name=".EstadisticasNotasAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ValidarNotasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotasAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApuntesAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventosAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionarUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConversacionesPrivadasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearEventoPadre"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatGrupalActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MenuPadreActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".EventosPadresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuProfesorActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".GestionAulaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatPrivadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterProfesorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

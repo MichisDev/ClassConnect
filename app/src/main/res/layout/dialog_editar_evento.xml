@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Campo de texto para editar el título del evento -->
+    <EditText
+        android:id="@+id/etTituloEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título del evento"
+        android:fontFamily="@font/spectralregular"
+        android:inputType="textCapWords" />
+
+    <!-- Campo de texto para editar la descripción del evento -->
+    <EditText
+        android:id="@+id/etDescripcionEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:fontFamily="@font/spectralregular"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:layout_marginTop="8dp" />
+
+    <!-- Selector de tipo de evento editable -->
+    <Spinner
+        android:id="@+id/spinnerTipoEditar"
+        style="@style/Widget.AgendaDigital.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="48dp" />
+</LinearLayout>

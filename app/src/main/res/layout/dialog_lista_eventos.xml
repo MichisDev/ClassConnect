@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Título del diálogo opcional, si se usa desde código -->
+    <TextView
+        android:id="@+id/tvTituloDialogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Eventos del día"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/md_theme_primary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaEventos"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        android:background="@drawable/bg_recycler_rounded" />
+</LinearLayout>

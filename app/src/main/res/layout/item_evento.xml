@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/md_theme_tertiaryFixedDim">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Etiqueta visual del tipo de evento -->
+        <TextView
+            android:id="@+id/tvTipoEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_tipo_evento"
+            android:padding="4dp"
+            android:text="Tipo visual"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/spectralbold" />
+
+        <!-- Título del evento -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Título"
+            android:textColor="@color/md_theme_onTertiaryContainer"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/spectralextrabold" />
+
+        <!-- Descripción del evento -->
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Descripción del evento"
+            android:textColor="@color/md_theme_onTertiaryContainer"
+            android:textSize="16sp"
+            android:fontFamily="@font/spectralregular" />
+
+        <!-- Fecha y hora -->
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Fecha"
+            android:textColor="@color/md_theme_onTertiaryContainer"
+            android:textSize="14sp"
+            android:fontFamily="@font/spectralregular" />
+
+        <!-- Contenedor de botones -->
+        <LinearLayout
+            android:id="@+id/contenedorBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditar"
+                style="@style/Widget.AgendaDigital.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                style="@style/Widget.AgendaDigital.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Eliminar"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatPrivadoActivity">
+
+    <!-- Nombre del usuario receptor -->
+    <TextView
+        android:id="@+id/tvNombreReceptor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Chat con [Nombre]"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/spectralbold"
+        android:gravity="center"
+        android:textColor="@color/md_theme_onBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Lista de mensajes del chat privado -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChatPrivado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreReceptor"
+        app:layout_constraintBottom_toTopOf="@id/layoutInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contenedor para el input de mensajes y botón de enviar -->
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Campo para escribir el mensaje -->
+        <EditText
+            android:id="@+id/etMensajePrivado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_escribe_mensaje"
+            android:padding="10dp"
+            android:fontFamily="@font/spectralregular"
+            android:background="@android:drawable/edit_text"
+            android:inputType="text" />
+
+        <!-- Botón para enviar mensaje -->
+        <Button
+            android:id="@+id/btnEnviarPrivado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar"
+            style="@style/Widget.AgendaDigital.Button"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

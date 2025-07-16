@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">AgendaDigital</string>
+    <string name="agenda_digital">Digital Agenda</string>
+    <string name="registrarse">Sign Up</string>
+    <string name="correo_electronico">Email</string>
+    <string name="logo">Logo</string>
+    <string name="iniciar_sesi_n">Log In</string>
+    <string name="selecciona_tu_rol_para_registrarte">Select your role to sign up</string>
+    <string name="contrase_a">Password</string>
+
+    <!-- Teacher Menu -->
+    <string name="menu_profesor">Teacher Menu</string>
+    <string name="revisar_solicitudes">Manage requests</string>
+    <string name="ver_eventos">View/Create events</string>
+    <string name="chat_grupal">Group chat with parents</string>
+    <string name="chat_privado">Private chat with parent</string>
+    <string name="ver_calendario">View calendar</string>
+    <string name="validar_notas">Validate grades</string>
+
+    <!-- Accessibility -->
+    <string name="icono_profesor">Teacher icon</string>
+    <string name="icono_evento">Event icon</string>
+
+    <!-- Requests -->
+    <string name="titulo_solicitudes">Registration Requests</string>
+    <string name="sin_solicitudes">No pending requests</string>
+
+    <!-- Request item -->
+    <string name="aceptar">Accept</string>
+    <string name="rechazar">Reject</string>
+
+    <!-- Events -->
+    <string name="titulo_evento">Event title</string>
+    <string name="descripcion_evento">Description</string>
+    <string name="tipo_evento">Event type</string>
+    <string name="privacidad_evento">Privacy</string>
+    <string name="seleccionar_fecha">Select date</string>
+    <string name="seleccionar_hora">Select time</string>
+    <string name="crear_evento">Create event</string>
+    <string name="editar_evento">Edit event</string>
+    <string name="guardar">Save</string>
+    <string name="cancelar">Cancel</string>
+    <string name="evento_comun">Common event</string>
+    <string name="evento_personal">Personal event</string>
+    <string name="eliminar_evento_titulo">Delete event</string>
+    <string name="eliminar_evento_mensaje">Do you want to delete &quot;%1$s&quot;?</string>
+    <string name="error_evento">An error occurred while processing events.</string>
+
+    <!-- Group chat -->
+    <string name="enviar">Send</string>
+    <string name="hint_mensaje_chat">Write your message...</string>
+    <string name="error_envio_mensaje">Error sending message</string>
+    <string name="error_usuario">Could not retrieve user</string>
+    <string name="usuario_no_autenticado">User not authenticated</string>
+
+    <!-- Private chat -->
+    <string name="titulo_conversaciones_privadas">Private Conversations</string>
+    <string name="escribe_tu_mensaje">Write your message...</string>
+    <string name="chat_con">Chat with %1$s</string>
+    <string name="chat_privado_generico">Private chat</string>
+    <string name="error_enviar_mensaje">Error sending message</string>
+    <string name="error_obtener_usuario">Could not retrieve user</string>
+    <string name="nombre_usuario_chat">Username to start a private chat</string>
+    <string name="hint_escribe_mensaje">Type your message...</string>
+    <string name="titulo_conversaciones">Private conversations</string>
+
+
+    <!-- Calendar -->
+    <string name="titulo_calendario">School Calendar</string>
+    <string name="titulo_dialogo_eventos">Events on %1$s</string>
+    <string name="cerrar">Close</string>
+    <string name="sin_eventos_dia">No events on this day</string>
+
+    <!-- Pending grade item -->
+    <string name="asignatura">Subject</string>
+    <string name="nota_propuesta">Proposed grade</string>
+    <string name="fecha_nota">Date</string>
+    <string name="estado_validada">Validated</string>
+    <string name="estado_pendiente">Pending validation</string>
+
+    <!-- Parent menu -->
+    <string name="ver_eventos_escolares">View school events</string>
+    <string name="chat_privado_tutor">Private chat with the tutor</string>
+    <string name="chat_grupal_tutor">Group chat with the tutor</string>
+    <string name="menu_padre">Parent Menu</string>
+
+    <!-- Icon descriptions -->
+    <string name="icono_eventos_padre">School events icon</string>
+    <string name="icono_chat_grupal_padre">Group chat icon</string>
+    <string name="icono_chat_privado_padre">Private chat icon</string>
+    <string name="icono_calendario_padre">School calendar icon</string>
+    <string name="icono_familia">Family icon</string>
+
+    <!-- Reusables -->
+    <string name="cargando_usuarios">Loading users...</string>
+    <string name="error_cargar_usuarios">Error loading users</string>
+    <string name="no_usuarios_disponibles">No available users to chat with</string>
+    <string name="no_se_encontro_tutor">No tutor found</string>
+    <string name="error_buscar_tutor">Error searching for tutor</string>
+
+    <!-- Parent event -->
+    <string name="eventos">School events</string>
+    <string name="crear_evento_personal">Create personal event</string>
+
+
+    <!-- Create Personal Event Parent  -->
+    <string name="nuevo_evento_personal">New Personal Event</string>
+
+    <!-- Student Menu -->
+    <string name="menu_alumno">Student Menu</string>
+    <string name="apuntes">Notes</string>
+    <string name="notas">Grades</string>
+    <string name="estadisticas">View statistics</string>
+    <string name="tus_eventos_asignados">Your assigned events</string>
+
+    <!-- Notes -->
+    <string name="titulo_apuntes">📝 Your notes</string>
+    <string name="anadir_apunte">Add Note</string>
+    <string name="titulo_nuevo_apunte">New Note</string>
+    <string name="guardar_apunte">Save</string>
+    <string name="accion_apunte">Note action</string>
+    <string name="editar">Edit</string>
+    <string name="eliminar">Delete</string>
+    <string name="titulo_editar_apunte">Edit Note</string>
+    <string name="actualizar">Update</string>
+    <string name="confirmar_eliminar_apunte">Are you sure you want to delete this note?</string>
+    <string name="eliminar_apunte">Delete note</string>
+
+    <!-- Grades -->
+    <string name="titulo_notas_validadas">Your validated grades</string>
+    <string name="btn_añadir_nota_borrador">Add Grade (draft)</string>
+    <string name="ic_notas">Notes icon</string>
+
+    <string name="titulo_estadisticas">Notes statistics</string>
+
+    <string name="desc_icono_rol">Selected role icon</string>
+
+    <!-- Parent request -->
+    <string name="solicitar_acceso">Request Access</string>
+    <string name="icono_padre">Parent icon</string>
+    <string name="hint_nombre_completo">Your full name</string>
+    <string name="hint_correo_electronico">Email address</string>
+    <string name="hint_contraseña">Password</string>
+    <string name="hint_codigo_invitacion">Invitation code</string>
+    <string name="mensaje_campos_vacios">Please fill in all fields</string>
+    <string name="mensaje_codigo_invalido">Invalid or unauthorized code for parents</string>
+    <string name="mensaje_solicitud_enviada">Request sent</string>
+    <string name="mensaje_error_solicitud">Error sending request</string>
+    <string name="mensaje_error_verificar_codigo">Error verifying code</string>
+    <string name="hint_nombre">Your full name</string>
+    <string name="hint_email">Email address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_codigo">Invitation code</string>
+
+    <!-- Error messages -->
+    <string name="mensaje_email_invalido">Enter a valid email address</string>
+    <string name="mensaje_contrasena_corta">Password must be at least 6 characters</string>
+
+    <!-- Teacher register -->
+    <string name="titulo_registro_profesor">Teacher Registration</string>
+    <string name="hint_repetir_password">Repeat password</string>
+    <string name="registrarme">Register</string>
+    <string name="ya_tienes_cuenta">Already have an account? Log in</string>
+
+    <!-- Student register -->
+    <string name="icono_alumno">Student icon</string>
+    <string name="registrar_alumno">Register student</string>
+
+    <!-- Seleccionar Usuario Chat Privado-->
+    <string name="icono_chat">Chat icon</string>
+    <string name="selecciona_usuario_chat">Select a user to chat</string>
+
+    <string name="icono_validar_notas">Validation icon</string>
+    <string name="validar_notas_titulo">✅ Validate pending grades</string>
+
+
+    <string name="calificacion">Grade</string>
+    <string name="fecha">Date</string>
+
+</resources>

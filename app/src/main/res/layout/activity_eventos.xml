@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EventosActivity">
+
+    <!-- Campo para introducir el título del evento -->
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spectralregular"
+        android:hint="Título del evento"
+        android:inputType="text" />
+
+    <!-- Campo para introducir la descripción del evento -->
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/spectralregular"
+        android:hint="Descripción"
+        android:inputType="textMultiLine"
+        android:minLines="2" />
+
+    <!-- Selector del tipo de evento -->
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        style="@style/Widget.AgendaDigital.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <!-- Selector de privacidad (personal o común) -->
+    <Spinner
+        android:id="@+id/spinnerPrivacidad"
+        style="@style/Widget.AgendaDigital.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <!-- Selector de fecha del evento -->
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/md_theme_outlineVariant"
+        android:fontFamily="@font/spectralextrabold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Seleccionar fecha"
+        android:textColor="@color/md_theme_onTertiaryContainer" />
+
+    <!-- Selector de hora del evento -->
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/md_theme_outlineVariant"
+        android:fontFamily="@font/spectralextrabold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Seleccionar hora"
+        android:textColor="@color/md_theme_onTertiaryContainer" />
+
+    <!-- Botón para crear evento -->
+    <Button
+        android:id="@+id/btnCrearEvento"
+        style="@style/Widget.AgendaDigital.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Crear evento" />
+
+    <!-- Lista de eventos existentes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_evento" />
+
+</LinearLayout>

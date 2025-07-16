@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_theme_surface"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Asignatura"
+        android:textColor="@color/md_theme_primary"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spAsignaturas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Contenido del apunte"
+        android:textColor="@color/md_theme_primary"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etContenidoApunte"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_input"
+        android:gravity="top"
+        android:hint="Escribe tu apunte aquí"
+        android:inputType="textMultiLine" />
+</LinearLayout>
