@@ -43,7 +43,7 @@ Este proyecto supuso un reto integral donde apliqué conocimientos técnicos y d
 
 ## 📷 Capturas de pantalla
 
-*⚠️ Próximamente añadiré capturas para mostrar la interfaz y funcionalidades.*
+Puedes ver capturas detalladas en la [guía de usuario dentro del documento](docs/TFG_MichelleVelasquez.pdf).
 
 ---
 
