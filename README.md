@@ -1,7 +1,7 @@
 # 📚 ClassConnect
 
 [![Calificación](https://img.shields.io/badge/Calificación-10/10-brightgreen)](https://github.com/MichisDev/ClassConnect)  
-[![Lenguaje](https://img.shields.io/badge/Lenguaje-Kotlin-orange)](https://kotlinlang.org/)
+[![Lenguaje](https://img.shields.io/badge/Lenguaje-Kotlin-purple)](https://kotlinlang.org/)
 [![Estado](https://img.shields.io/badge/Estado-Completado-blue)]()
 
 ClassConnect es una agenda escolar digital diseñada para facilitar la comunicación entre alumnos, padres y profesores de educación primaria. Permite gestionar tareas, apuntes, eventos escolares, calificaciones y comunicación interna, mejorando la experiencia educativa.
