@@ -47,8 +47,27 @@ Puedes ver capturas detalladas en la [guía de usuario dentro del documento](doc
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+## 🚀1. Cómo ejecutar el proyecto
 
-1. Clona el repositorio:  
+- Clona el repositorio:  
    ```bash
    git clone https://github.com/MichisDev/ClassConnect.git
+
+## 🔐 2. Configuración de Firebase (`google-services.json`)
+
+Este proyecto utiliza Firebase para autenticación y otras funcionalidades.  
+Por motivos de seguridad, el archivo real `google-services.json` **no está incluido** en el repositorio (está ignorado por `.gitignore`).
+
+### ➕ ¿Cómo configurarlo?
+
+1. Ve a [Firebase Console](https://console.firebase.google.com/).
+2. Selecciona tu proyecto o crea uno nuevo.
+3. Haz clic en **"Agregar app"** (Android) y registra el mismo `package name`:  
+4. Descarga el archivo `google-services.json` que se te proporciona.
+5. Colócalo en la siguiente ruta dentro del proyecto:  
+
+### 🧪 Archivo de ejemplo
+
+Este repositorio contiene un archivo `google-services-example.json` como guía de estructura.  
+🔸 **No funcionará en producción**, solo sirve como plantilla para ayudarte a crear el tuyo.
+
