@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1015338559042",
-    "project_id": "agendadigital-3982a",
-    "storage_bucket": "agendadigital-3982a.firebasestorage.app"
+    "project_number": "YOUR_PROJECT_NUMBER",
+    "project_id": "YOUR_PROJECT_ID",
+    "storage_bucket": "YOUR_STORAGE_BUCKET"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1015338559042:android:2269ccf1dd86b20134afdb",
+        "mobilesdk_app_id": "YOUR_MOBILESDK_APP_ID",
         "android_client_info": {
           "package_name": "com.example.agendadigital"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBBeEAQnOObXBokCEL52y3eLIMm8sLuraM"
+          "current_key": "YOUR_API_KEY"
         }
       ],
       "services": {

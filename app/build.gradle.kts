@@ -1,8 +1,18 @@
+import java.io.File
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     id("org.jetbrains.kotlin.android")
     alias(libs.plugins.google.gms.google.services)
 }
+
+val localProperties = Properties().apply {
+    load(File(rootDir, "local.properties").inputStream())
+}
+val googleApiKey: String = localProperties["GOOGLE_API_KEY"] as? String
+    ?: throw GradleException("GOOGLE_API_KEY no está definido en local.properties")
+
 
 android {
     namespace = "com.example.agendadigital"
@@ -16,6 +26,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Inyectamos la clave API
+        buildConfigField("String", "GOOGLE_API_KEY", "\"$googleApiKey\"")
     }
 
     buildTypes {
@@ -36,6 +49,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 
 }

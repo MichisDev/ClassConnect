@@ -159,6 +159,7 @@ class MainActivity : AppCompatActivity() {
                                     finish()
                                 }
                         } else {
+                            Log.e("LOGIN_ERROR", "Error en login", task.exception)
                             Toast.makeText(this, "Error en el login", Toast.LENGTH_SHORT).show()
                         }
                     }
